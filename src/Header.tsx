@@ -9,10 +9,10 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between text-white">
         <nav className="hidden gap-4 sm:flex">
           <a href="https://github.com/carinci" target="_blank">
-            <GitHubIcon />
+            <GitHubIcon className="size-5" />
           </a>
           <a href="https://linkedin.com/in/carinci" target="_blank">
-            <LinkedInIcon />
+            <LinkedInIcon className="size-5" />
           </a>
         </nav>
         <nav className="flex flex-grow items-center justify-between gap-4 text-sm uppercase sm:flex-grow-0 sm:justify-normal sm:gap-8 sm:text-base">
@@ -23,7 +23,7 @@ export default function Header() {
             href="/resume.pdf"
             target="_blank"
           >
-            <ArrowRightTopOnSquareIcon />
+            <ArrowRightTopOnSquareIcon className="size-4" />
             Resume
           </NavLink>
           <NavLink

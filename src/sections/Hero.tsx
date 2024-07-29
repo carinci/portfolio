@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="container mx-auto grid gap-6 pb-32 pt-16 text-white">
         <p className="text-xl sm:text-2xl">Hi, I'm</p>
         <p className="text-6xl font-bold sm:text-8xl">
-          <span className="bg-violet-600 leading-snug text-black">
+          <span className="bg-violet-400 leading-snug text-black">
             Chris
             <br />
             Carinci.

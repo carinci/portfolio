@@ -1,10 +1,14 @@
 // https://heroicons.com
 // https://icons.getbootstrap.com
 
-export const ArrowRightTopOnSquareIcon = () => {
+export const ArrowRightTopOnSquareIcon = ({
+  className,
+}: {
+  className?: string
+}) => {
   return (
     <svg
-      className="size-4"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
       fill="currentColor"
@@ -15,10 +19,27 @@ export const ArrowRightTopOnSquareIcon = () => {
   )
 }
 
-export const GitHubIcon = () => {
+export const ArrowUpRightIcon = ({ className }: { className?: string }) => {
   return (
     <svg
-      className="size-5"
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  )
+}
+
+export const GitHubIcon = ({ className }: { className?: string }) => {
+  return (
+    <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
       fill="currentColor"
@@ -28,10 +49,10 @@ export const GitHubIcon = () => {
   )
 }
 
-export const LinkedInIcon = () => {
+export const LinkedInIcon = ({ className }: { className?: string }) => {
   return (
     <svg
-      className="size-5"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
       fill="currentColor"
