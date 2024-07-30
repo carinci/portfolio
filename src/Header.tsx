@@ -27,7 +27,7 @@ export default function Header() {
             Resume
           </NavLink>
           <NavLink
-            className="rounded border-2 border-white px-4 py-2 hover:bg-white hover:text-black"
+            className="rounded border-2 border-white px-4 py-2 transition-colors hover:bg-white hover:text-black"
             href="#contact"
           >
             Contact

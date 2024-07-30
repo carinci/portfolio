@@ -1,4 +1,6 @@
 import { twc } from 'react-twc'
+import { twJoin } from 'tailwind-merge'
+import { PrimaryHeading } from '../common'
 import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon } from '../icons'
 
 const FormLabel = twc.label`text-white`
@@ -25,7 +27,7 @@ const ContactForm = () => {
       <div className="grid">
         <FormLabel htmlFor="message">Message</FormLabel>
         <textarea
-          className={inputClasses}
+          className={twJoin(inputClasses, 'resize-none')}
           id="message"
           name="message"
           required
@@ -48,7 +50,7 @@ export default function Contact() {
     <section className="bg-black px-4" id="contact">
       <div className="container mx-auto grid gap-8 py-32">
         <div className="text-white">
-          <h2 className="mb-4 text-6xl font-bold uppercase">Get in touch</h2>
+          <PrimaryHeading className="mb-4">Get in touch</PrimaryHeading>
           <p>Want to work with me? Send me a message</p>
         </div>
         <ContactForm />
