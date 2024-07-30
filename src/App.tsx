@@ -12,6 +12,7 @@ export default function App() {
       <Header />
       <Hero />
       <About />
+      <hr className="border-t-2 border-black" />
       <Projects />
       <Contact />
     </div>

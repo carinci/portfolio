@@ -1,15 +1,20 @@
 import { twc } from 'react-twc'
 import { twJoin } from 'tailwind-merge'
-import { PrimaryHeading } from '../common'
+import { Hyperlink, PrimaryHeading } from '../common'
 import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon } from '../icons'
 
 const FormLabel = twc.label`text-white`
-const inputClasses = 'rounded p-4 placeholder-neutral-600'
+const inputClasses =
+  'rounded p-4 placeholder-neutral-600 outline-none disabled:opacity-80'
 const FormInput = twc.input`${inputClasses}`
 
 const ContactForm = () => {
   return (
-    <form className="grid gap-4" action="#" method="POST">
+    <form
+      className="grid gap-4"
+      action="https://send.pageclip.co/guWO1sA2c3BYePS21yxYAjBd0okydEgI/contact"
+      method="post"
+    >
       <div className="grid">
         <FormLabel htmlFor="name">Full name</FormLabel>
         <FormInput id="name" name="name" required placeholder="John Doe" />
@@ -36,7 +41,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex justify-end">
-        <button className="inline-flex items-center gap-0.5 rounded bg-violet-400 px-8 py-4 hover:underline">
+        <button className="inline-flex items-center gap-0.5 rounded bg-violet-400 px-8 py-4 uppercase hover:underline">
           <ArrowUpRightIcon className="size-4" />
           Send
         </button>
@@ -51,16 +56,29 @@ export default function Contact() {
       <div className="container mx-auto grid gap-8 py-32">
         <div className="text-white">
           <PrimaryHeading className="mb-4">Get in touch</PrimaryHeading>
-          <p>Want to work with me? Send me a message</p>
+          <p>
+            Want to work with me? Send me a message or{' '}
+            <Hyperlink
+              href="https://www.linkedin.com/in/carinci/"
+              target="_blank"
+            >
+              connect on LinkedIn
+            </Hyperlink>
+          </p>
         </div>
         <ContactForm />
-        <div className="flex items-center justify-center gap-4 text-white">
-          <a href="https://github.com/carinci" target="_blank">
-            <GitHubIcon className="size-7" />
-          </a>
-          <a href="https://linkedin.com/in/carinci" target="_blank">
-            <LinkedInIcon className="size-7" />
-          </a>
+        <div className="flex flex-col items-center gap-8 text-white">
+          <div className="flex gap-4">
+            <a href="https://github.com/carinci" target="_blank">
+              <GitHubIcon className="size-7" />
+            </a>
+            <a href="https://linkedin.com/in/carinci" target="_blank">
+              <LinkedInIcon className="size-7" />
+            </a>
+          </div>
+          <Hyperlink className="text-sm" href="#">
+            Back to top
+          </Hyperlink>
         </div>
       </div>
     </section>

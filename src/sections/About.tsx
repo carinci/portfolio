@@ -1,5 +1,5 @@
 import { twc } from 'react-twc'
-import { SecondaryHeading } from '../common'
+import { Hyperlink, SecondaryHeading } from '../common'
 import { StarIcon } from '../icons'
 
 const ToolsSection = twc.div`flex flex-wrap gap-2`
@@ -52,13 +52,22 @@ export default function About() {
     <section className="bg-violet-400 px-4" id="about">
       <div className="container mx-auto grid gap-16 py-32">
         <div className="grid gap-4 sm:gap-8">
-          <figure className="size-28 flex-shrink-0 rounded-full border-2 border-black bg-white sm:size-32" />
+          <figure className="size-28 flex-shrink-0 rounded-full border-2 border-black bg-white sm:size-36" />
           <SecondaryHeading>
             I build beautiful and responsive websites.
           </SecondaryHeading>
           <p className="sm:text-lg">
             I started out as a hobbyist PHP developer when I was 10, and I've
             since developed my skills professionally.
+          </p>
+          <p className="sm:text-lg">
+            I recently graduated with a BSc in Computer Science from the
+            University of Leicester. I'm actively looking for work, so please
+            feel free to&nbsp;
+            <Hyperlink className="font-semibold" href="#contact">
+              get in touch
+            </Hyperlink>
+            !
           </p>
         </div>
         <hr className="border-t-4 border-dotted border-black" />
