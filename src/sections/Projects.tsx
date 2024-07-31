@@ -1,10 +1,68 @@
-import { PrimaryHeading } from '../common'
+import { PrimaryHeading, ToolBadge } from '../common'
+import projects from '../data/projects.json'
+import { ArrowUpRightIcon } from '../icons'
+
+const Project = ({
+  name,
+  summary,
+  url,
+  thumbnail,
+  tools,
+}: {
+  name: string
+  summary: string
+  url: string
+  thumbnail: string
+  tools?: string[]
+}) => {
+  return (
+    <a className="group relative" href={url} target="_blank">
+      <div className="bg-primary-200 absolute inset-0 rounded border-2 border-black" />
+      <div className="relative flex gap-4 rounded border-2 border-black bg-white p-4 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+        <figure
+          className="aspect-[4/3] h-24 rounded bg-neutral-400 bg-cover bg-center sm:h-28"
+          style={{ backgroundImage: `url(${thumbnail})` }}
+        />
+        <div className="flex flex-col items-start gap-1.5">
+          {tools && (
+            <div className="flex flex-wrap gap-2">
+              {tools.map((tool, index) => (
+                <ToolBadge className="text-sm" key={index}>
+                  {tool}
+                </ToolBadge>
+              ))}
+            </div>
+          )}
+          <h3 className="text-xl font-bold uppercase underline decoration-dotted group-hover:decoration-solid sm:text-2xl">
+            {name}
+          </h3>
+          <p className="text-sm sm:text-base">{summary}</p>
+          <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded border-2 border-black px-4 py-2 text-sm uppercase group-hover:underline sm:text-base">
+            <ArrowUpRightIcon className="size-4" /> View
+          </button>
+        </div>
+      </div>
+    </a>
+  )
+}
 
 export default function Projects() {
   return (
     <section className="px-4" id="projects">
       <div className="container mx-auto py-32">
-        <PrimaryHeading>Projects</PrimaryHeading>
+        <PrimaryHeading className="mb-8">Projects</PrimaryHeading>
+        <div className="grid gap-4">
+          {projects.map((project, index) => (
+            <Project
+              key={index}
+              name={project.name}
+              summary={project.summary}
+              url={project.url}
+              thumbnail={project.thumbnail}
+              tools={project.tools}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

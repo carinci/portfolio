@@ -1,9 +1,8 @@
 import { twc } from 'react-twc'
-import { Hyperlink, SecondaryHeading } from '../common'
+import { Hyperlink, SecondaryHeading, ToolBadge } from '../common'
 import { StarIcon } from '../icons'
 
 const ToolsSection = twc.div`flex flex-wrap gap-2`
-const ToolBadge = twc.span`inline-flex select-none items-center gap-0.5 rounded border-2 border-black bg-black px-2 py-0.5 lowercase text-white transition-colors hover:bg-transparent hover:text-black`
 
 const Tools = () => {
   return (
