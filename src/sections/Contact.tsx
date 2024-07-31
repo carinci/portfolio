@@ -4,8 +4,7 @@ import { Hyperlink, PrimaryHeading } from '../common'
 import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon } from '../icons'
 
 const FormLabel = twc.label`text-white`
-const inputClasses =
-  'rounded p-4 placeholder-neutral-600 outline-none disabled:opacity-80'
+const inputClasses = 'rounded p-4 placeholder-neutral-600 outline-none'
 const FormInput = twc.input`${inputClasses}`
 
 const ContactForm = () => {
@@ -35,15 +34,15 @@ const ContactForm = () => {
           className={twJoin(inputClasses, 'resize-none')}
           id="message"
           name="message"
-          required
           rows={5}
+          required
+          minLength={20}
           placeholder="Hey!"
         />
       </div>
       <div className="flex justify-end">
         <button className="inline-flex items-center gap-0.5 rounded bg-violet-400 px-8 py-4 uppercase hover:underline">
-          <ArrowUpRightIcon className="size-4" />
-          Send
+          <ArrowUpRightIcon className="size-4" /> Send
         </button>
       </div>
     </form>
@@ -57,7 +56,7 @@ export default function Contact() {
         <div className="text-white">
           <PrimaryHeading className="mb-4">Get in touch</PrimaryHeading>
           <p>
-            Want to work with me? Send me a message or{' '}
+            Want to work with me? Send me a message or&nbsp;
             <Hyperlink
               href="https://www.linkedin.com/in/carinci/"
               target="_blank"
