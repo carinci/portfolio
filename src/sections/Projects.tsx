@@ -2,7 +2,7 @@ import { PrimaryHeading, ToolBadge } from '../common'
 import projects from '../data/projects.json'
 import { ArrowUpRightIcon } from '../icons'
 
-const Project = ({
+const ProjectCard = ({
   name,
   summary,
   url,
@@ -53,7 +53,7 @@ export default function Projects() {
         <PrimaryHeading className="mb-8">Projects</PrimaryHeading>
         <div className="grid gap-4">
           {projects.map((project, index) => (
-            <Project
+            <ProjectCard
               key={index}
               name={project.name}
               summary={project.summary}
