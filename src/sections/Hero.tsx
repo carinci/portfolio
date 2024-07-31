@@ -3,8 +3,8 @@ export default function Hero() {
     <section className="bg-black px-4">
       <div className="container mx-auto grid select-none gap-6 pb-32 pt-16 text-white">
         <h3 className="text-xl sm:text-2xl">Hi, I'm</h3>
-        <h1 className="text-6xl font-bold sm:text-8xl">
-          <span className="bg-violet-200 leading-snug text-black">
+        <h1 className="text-6xl font-bold text-black sm:text-8xl">
+          <span className="bg-violet-200 leading-tight">
             Chris
             <br />
             Carinci.

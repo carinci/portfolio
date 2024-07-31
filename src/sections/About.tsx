@@ -52,13 +52,18 @@ export default function About() {
     <section className="bg-violet-200 px-4" id="about">
       <div className="container mx-auto grid gap-16 py-32">
         <div className="grid gap-4 sm:gap-8">
-          <figure className="size-32 flex-shrink-0 rounded-full bg-portrait bg-cover bg-center sm:size-40" />
+          <figure className="size-32 flex-shrink-0 rounded-full bg-neutral-400 bg-portrait bg-cover bg-center sm:size-40" />
           <SecondaryHeading>
             I build beautiful and responsive websites.
           </SecondaryHeading>
           <p className="sm:text-lg">
-            I started out as a hobbyist PHP developer when I was 10, and I've
-            since developed my skills professionally.
+            I'm passionate about designing and building dynamic web applications
+            using a range of technologies. My love for coding began at age 10
+            when I started tinkering with PHP, and I've since developed my
+            skills professionally.&nbsp;
+            <Hyperlink className="font-semibold" href="#projects">
+              View my projects
+            </Hyperlink>
           </p>
           <p className="sm:text-lg">
             I recently graduated with a BSc in Computer Science from the
