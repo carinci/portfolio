@@ -20,7 +20,7 @@ const Project = ({
       <div className="bg-primary-200 absolute inset-0 rounded border-2 border-black" />
       <div className="relative flex gap-4 rounded border-2 border-black bg-white p-4 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
         <figure
-          className="aspect-[4/3] h-24 rounded bg-neutral-400 bg-cover bg-center sm:h-28"
+          className="aspect-[4/3] h-24 rounded bg-neutral-400 bg-cover bg-center sm:h-40"
           style={{ backgroundImage: `url(${thumbnail})` }}
         />
         <div className="flex flex-col items-start gap-1.5">
