@@ -41,7 +41,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex justify-end">
-        <button className="inline-flex items-center gap-0.5 rounded bg-violet-400 px-8 py-4 uppercase hover:underline">
+        <button className="inline-flex items-center gap-0.5 rounded bg-violet-200 px-8 py-4 uppercase hover:underline">
           <ArrowUpRightIcon className="size-4" /> Send
         </button>
       </div>
