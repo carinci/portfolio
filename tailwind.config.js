@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
@@ -5,6 +7,9 @@ export default {
     extend: {
       backgroundImage: {
         portrait: 'url("/portrait.png")',
+      },
+      colors: {
+        primary: colors.violet,
       },
       fontFamily: {
         mono: ['Fira Code', 'monospace'],

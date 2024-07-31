@@ -49,10 +49,12 @@ const Tools = () => {
 
 export default function About() {
   return (
-    <section className="bg-violet-200 px-4" id="about">
+    <section className="bg-primary-200 px-4" id="about">
       <div className="container mx-auto grid gap-16 py-32">
         <div className="grid gap-8">
-          <figure className="size-32 flex-shrink-0 rounded-full bg-neutral-400 bg-portrait bg-cover bg-center sm:size-40" />
+          <figure className="relative size-32 overflow-hidden rounded-full bg-neutral-400 bg-portrait bg-cover bg-center sm:size-40">
+            <div className="bg-primary-800 absolute inset-0 opacity-10" />
+          </figure>
           <SecondaryHeading>
             I build beautiful and responsive websites.
           </SecondaryHeading>
