@@ -1,4 +1,4 @@
-import { PrimaryHeading, ToolBadge } from '../common'
+import { Badge, PrimaryHeading } from '../common'
 import projects from '../data/projects.json'
 import { ArrowUpRightIcon } from '../icons'
 
@@ -7,13 +7,13 @@ const ProjectCard = ({
   summary,
   url,
   thumbnail,
-  tools,
+  tags,
 }: {
   name: string
   summary: string
   url: string
   thumbnail: string
-  tools?: string[]
+  tags?: string[]
 }) => {
   return (
     <a
@@ -29,12 +29,12 @@ const ProjectCard = ({
           style={{ backgroundImage: `url(${thumbnail})` }}
         />
         <div className="flex flex-col items-start gap-2">
-          {tools && (
-            <div className="flex flex-wrap gap-2">
-              {tools.map((tool, index) => (
-                <ToolBadge className="text-sm" key={index}>
-                  {tool}
-                </ToolBadge>
+          {tags && (
+            <div className="flex flex-wrap gap-1">
+              {tags.map((tag, index) => (
+                <Badge className="text-sm" key={index}>
+                  {tag}
+                </Badge>
               ))}
             </div>
           )}
@@ -65,7 +65,7 @@ export default function Projects() {
               summary={project.summary}
               url={project.url}
               thumbnail={project.thumbnail}
-              tools={project.tools}
+              tags={project.tags}
             />
           ))}
         </div>

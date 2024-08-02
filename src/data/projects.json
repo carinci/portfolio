@@ -4,20 +4,27 @@
     "summary": "Lorem ipsum",
     "url": "#",
     "thumbnail": "#",
-    "tools": ["Laravel", "React"]
+    "tags": ["Laravel", "React", "CRUD"]
   },
   {
     "name": "Printify",
     "summary": "Generate posters from Spotify songs. Uses the Spotify API",
     "url": "#",
     "thumbnail": "#",
-    "tools": ["Next.js", "React"]
+    "tags": ["Next.js", "React"]
   },
   {
     "name": "Solo Pong",
     "summary": "Play Pong with yourself",
     "url": "#",
     "thumbnail": "#",
-    "tools": ["Three.js"]
+    "tags": ["Three.js"]
+  },
+  {
+    "name": "Election Platform",
+    "summary": "Vote for candidates in an election. A rewrite of a university project",
+    "url": "#",
+    "thumbnail": "#",
+    "tags": ["SvelteKit", "CRUD"]
   }
 ]

@@ -1,5 +1,5 @@
 import { twc } from 'react-twc'
-import { Hyperlink, SecondaryHeading, ToolBadge } from '../common'
+import { Badge, Hyperlink, SecondaryHeading } from '../common'
 import { StarIcon } from '../icons'
 
 const ToolsSection = twc.div`flex flex-wrap gap-2`
@@ -8,39 +8,39 @@ const Tools = () => {
   return (
     <div className="grid gap-4">
       <ToolsSection>
-        <ToolBadge>
+        <Badge>
           <StarIcon className="size-4" /> JavaScript
-        </ToolBadge>
-        <ToolBadge>
+        </Badge>
+        <Badge>
           <StarIcon className="size-4" /> TypeScript
-        </ToolBadge>
-        <ToolBadge>
+        </Badge>
+        <Badge>
           <StarIcon className="size-4" /> PHP
-        </ToolBadge>
-        <ToolBadge>Python</ToolBadge>
+        </Badge>
+        <Badge>Python</Badge>
       </ToolsSection>
       <ToolsSection>
-        <ToolBadge>
+        <Badge>
           <StarIcon className="size-4" /> React
-        </ToolBadge>
-        <ToolBadge>
+        </Badge>
+        <Badge>
           <StarIcon className="size-4" /> Tailwind CSS
-        </ToolBadge>
-        <ToolBadge>Vite</ToolBadge>
-        <ToolBadge>Svelte</ToolBadge>
-        <ToolBadge>Figma</ToolBadge>
+        </Badge>
+        <Badge>Vite</Badge>
+        <Badge>Svelte</Badge>
+        <Badge>Figma</Badge>
       </ToolsSection>
       <ToolsSection>
-        <ToolBadge>
+        <Badge>
           <StarIcon className="size-4" /> Laravel
-        </ToolBadge>
-        <ToolBadge>
+        </Badge>
+        <Badge>
           <StarIcon className="size-4" /> MySQL
-        </ToolBadge>
-        <ToolBadge>Express</ToolBadge>
-        <ToolBadge>Next.js</ToolBadge>
-        <ToolBadge>Gatsby</ToolBadge>
-        <ToolBadge>Firebase</ToolBadge>
+        </Badge>
+        <Badge>Express</Badge>
+        <Badge>Next.js</Badge>
+        <Badge>Gatsby</Badge>
+        <Badge>Firebase</Badge>
       </ToolsSection>
     </div>
   )
@@ -86,8 +86,7 @@ export default function About() {
         </div>
         <hr className="border-t-4 border-dotted border-black" />
         <div>
-          <SecondaryHeading>Tools I love</SecondaryHeading>
-          <p className="mb-8">(Always eager to learn!)</p>
+          <SecondaryHeading className="mb-8">Tools I love</SecondaryHeading>
           <Tools />
         </div>
       </div>
