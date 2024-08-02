@@ -23,7 +23,7 @@ const ProjectCard = ({
           className="aspect-[4/3] h-24 rounded bg-neutral-400 bg-cover bg-center sm:h-40"
           style={{ backgroundImage: `url(${thumbnail})` }}
         />
-        <div className="flex flex-col items-start gap-1.5">
+        <div className="flex flex-col items-start gap-2">
           {tools && (
             <div className="flex flex-wrap gap-2">
               {tools.map((tool, index) => (

@@ -18,6 +18,6 @@
     "summary": "Play Pong with yourself",
     "url": "#",
     "thumbnail": "#",
-    "tools": ["Three.js", "React"]
+    "tools": ["Three.js"]
   }
 ]
