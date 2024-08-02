@@ -33,9 +33,9 @@ const ProjectCard = ({
               ))}
             </div>
           )}
-          <h3 className="text-xl font-bold uppercase underline decoration-dotted group-hover:decoration-solid sm:text-2xl">
+          <h2 className="text-xl font-bold uppercase underline decoration-dotted group-hover:decoration-solid sm:text-2xl">
             {name}
-          </h3>
+          </h2>
           <p className="text-sm sm:text-base">{summary}</p>
           <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded border-2 border-black px-4 py-2 text-sm uppercase group-hover:underline sm:text-base">
             <ArrowUpRightIcon className="size-4" /> View
