@@ -1,12 +1,7 @@
 import { twc } from 'react-twc'
 import { twJoin } from 'tailwind-merge'
 import { Hyperlink, PrimaryHeading } from '../common'
-import {
-  ArrowUpRightIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  RocketLaunchIcon,
-} from '../icons'
+import { GitHubIcon, LinkedInIcon, RocketLaunchIcon } from '../icons'
 
 const FormLabel = twc.label`text-white`
 const inputClasses = 'rounded p-4 placeholder-neutral-600 outline-none'
