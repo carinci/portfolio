@@ -1,7 +1,12 @@
 import { twc } from 'react-twc'
 import { twJoin } from 'tailwind-merge'
 import { Hyperlink, PrimaryHeading } from '../common'
-import { ArrowUpRightIcon, GitHubIcon, LinkedInIcon } from '../icons'
+import {
+  ArrowUpRightIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  RocketLaunchIcon,
+} from '../icons'
 
 const FormLabel = twc.label`text-white`
 const inputClasses = 'rounded p-4 placeholder-neutral-600 outline-none'
@@ -42,7 +47,7 @@ const ContactForm = () => {
       </div>
       <div className="flex justify-end">
         <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded px-8 py-4 uppercase hover:underline">
-          <ArrowUpRightIcon className="size-4" /> Send
+          <RocketLaunchIcon className="size-4" /> Send
         </button>
       </div>
     </form>
