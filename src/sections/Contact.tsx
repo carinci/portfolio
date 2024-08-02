@@ -42,7 +42,7 @@ const ContactForm = () => {
       </div>
       <div className="flex justify-end">
         <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded px-8 py-4 uppercase hover:underline">
-          <RocketLaunchIcon className="size-4" /> Send
+          <RocketLaunchIcon className="size-4" aria-label="Send message" /> Send
         </button>
       </div>
     </form>
@@ -60,6 +60,7 @@ export default function Contact() {
             <Hyperlink
               href="https://www.linkedin.com/in/carinci/"
               target="_blank"
+              aria-label="LinkedIn"
             >
               connect on LinkedIn
             </Hyperlink>
@@ -68,14 +69,22 @@ export default function Contact() {
         <ContactForm />
         <div className="flex flex-col items-center gap-8 text-white">
           <div className="flex gap-4">
-            <a href="https://github.com/carinci" target="_blank">
+            <a
+              href="https://github.com/carinci"
+              target="_blank"
+              aria-label="GitHub"
+            >
               <GitHubIcon className="size-7" />
             </a>
-            <a href="https://linkedin.com/in/carinci" target="_blank">
+            <a
+              href="https://linkedin.com/in/carinci"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
               <LinkedInIcon className="size-7" />
             </a>
           </div>
-          <Hyperlink className="text-sm" href="#">
+          <Hyperlink className="text-sm" href="#" aria-label="Back to top">
             Back to top
           </Hyperlink>
         </div>

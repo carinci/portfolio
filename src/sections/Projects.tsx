@@ -16,7 +16,12 @@ const ProjectCard = ({
   tools?: string[]
 }) => {
   return (
-    <a className="group relative" href={url} target="_blank">
+    <a
+      className="group relative"
+      href={url}
+      target="_blank"
+      aria-label="View project"
+    >
       <div className="bg-primary-200 absolute inset-0 rounded border-2 border-black" />
       <div className="relative flex gap-4 rounded border-2 border-black bg-white p-4 transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
         <figure
@@ -38,7 +43,8 @@ const ProjectCard = ({
           </h2>
           <p className="text-sm sm:text-base">{summary}</p>
           <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded border-2 border-black px-4 py-2 text-sm uppercase group-hover:underline sm:text-base">
-            <ArrowUpRightIcon className="size-4" /> View
+            <ArrowUpRightIcon className="size-4" aria-label="View project" />
+            View
           </button>
         </div>
       </div>

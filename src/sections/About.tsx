@@ -62,7 +62,11 @@ export default function About() {
             using a range of technologies. My love for coding began at age 10
             when I started tinkering with PHP, and I've since developed my
             skills professionally.&nbsp;
-            <Hyperlink className="font-semibold" href="#projects">
+            <Hyperlink
+              className="font-semibold"
+              href="#projects"
+              aria-label="Projects"
+            >
               View my projects
             </Hyperlink>
           </p>
@@ -70,7 +74,11 @@ export default function About() {
             I recently graduated with a BSc in Computer Science from the
             University of Leicester. I'm actively looking for work, so please
             feel free to&nbsp;
-            <Hyperlink className="font-semibold" href="#contact">
+            <Hyperlink
+              className="font-semibold"
+              href="#contact"
+              aria-label="Contact"
+            >
               get in touch
             </Hyperlink>
             !
