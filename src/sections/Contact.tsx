@@ -9,11 +9,7 @@ const FormInput = twc.input`${inputClasses}`
 
 const ContactForm = () => {
   return (
-    <form
-      className="grid gap-4"
-      action="https://send.pageclip.co/guWO1sA2c3BYePS21yxYAjBd0okydEgI/contact"
-      method="post"
-    >
+    <form className="grid gap-4" action="#" method="post">
       <div className="grid">
         <FormLabel htmlFor="name">Full name</FormLabel>
         <FormInput id="name" name="name" required placeholder="John Doe" />
@@ -41,8 +37,12 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex justify-end">
-        <button className="bg-primary-200 inline-flex items-center gap-0.5 rounded px-8 py-4 uppercase hover:underline">
-          <RocketLaunchIcon className="size-4" aria-label="Send message" /> Send
+        <button
+          className="bg-primary-200 inline-flex items-center gap-0.5 rounded px-8 py-4 uppercase hover:underline"
+          aria-label="Send message"
+        >
+          <RocketLaunchIcon className="size-4" />
+          Send
         </button>
       </div>
     </form>

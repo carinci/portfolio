@@ -39,7 +39,7 @@ const Tools = () => {
         </Badge>
         <Badge>Express</Badge>
         <Badge>Next.js</Badge>
-        <Badge>Gatsby</Badge>
+        <Badge>SvelteKit</Badge>
         <Badge>Firebase</Badge>
       </ToolsSection>
     </div>

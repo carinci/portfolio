@@ -1,30 +1,9 @@
 [
   {
-    "name": "Budgeting App",
-    "summary": "Lorem ipsum",
+    "name": "TBD",
+    "summary": "TBD",
     "url": "#",
     "thumbnail": "#",
-    "tags": ["Laravel", "React", "CRUD"]
-  },
-  {
-    "name": "Printify",
-    "summary": "Generate posters from Spotify songs. Uses the Spotify API",
-    "url": "#",
-    "thumbnail": "#",
-    "tags": ["Next.js", "React"]
-  },
-  {
-    "name": "Solo Pong",
-    "summary": "Play Pong with yourself",
-    "url": "#",
-    "thumbnail": "#",
-    "tags": ["Three.js"]
-  },
-  {
-    "name": "Election Platform",
-    "summary": "Vote for candidates in an election. A rewrite of a university project",
-    "url": "#",
-    "thumbnail": "#",
-    "tags": ["SvelteKit", "CRUD"]
+    "tags": ["TBD"]
   }
 ]
